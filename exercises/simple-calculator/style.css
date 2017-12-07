@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+p {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
+
+#minus-operator {
+    font-size: 22px;
+}
+
+#x {
+    font-size: 16px;
+}
+
+button {
+    height: 20px;
+    width: 60px;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+#add-submit {
+    background-color: #E9B000;
+}
+
+#sub-submit {
+    background-color: #EB6E80;
+}
+
+#mult-submit {
+    background-color: #008F95;
+}

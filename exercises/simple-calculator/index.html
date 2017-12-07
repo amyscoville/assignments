@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div id="add">
+        <input type="text" id="addNum1">
+        <p>+</p>
+        <input type="text" id="addNum2">
+        <button id="add-submit" onclick="add()">add</button>
+        <p id="addOutput"></p>
+    </div>
+    <div id="subtract">
+        <input type="text" id="subNum1">
+        <p id="minus-operator">-</p>
+        <input type="text" id="subNum2">
+        <button id="sub-submit" onclick="subtract()">subtract</button>
+        <p id="subOutput"></p>
+    </div>
+    <div id="multiply">
+        <input type="text" id="multNum1">
+        <p id="x">x</p>
+        <input type="text" id="multNum2">
+        <button id="mult-submit" onclick="multiply()">multiply</button>
+        <p id="multOutput"></p>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
+

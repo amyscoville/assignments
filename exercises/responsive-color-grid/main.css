@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+body {
+    text-align: center;
+}
+#container {
+    width: 768px;
+    height: 550px;
+}
+
+div {
+    border: 5px solid white;
+    display: inline-block;
+    height: 25%;
+}
+
+#light-pink {
+    width: 100%;
+    background-color: #F5C6D6;
+}
+
+.hot-pink {
+    background-color: #EE2E84;
+    width: 25%;
+}
+
+.light-blue {
+    background-color: #85CFD8;
+    width: 50%;
+}
+
+#green {
+    width: 75%;
+    background-color: #8DC63F;
+}
+
+#orange {
+    width: 25%;
+    background-color: #E76E34;
+}
+
+@media (max-width: 768px) {
+    #container {
+        width: 100%;
+    }
+    #light-pink, .hot-pink, .light-blue, #green, #orange {
+        width: 100%;
+        height: 11%;
+        display: block;
+    }
+}

@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin-bottom: 30px;
+}
+
+#page-title {
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    font-size: 100px;
+}
+
+ul {
+    text-align: center;
+    margin: 0 auto;
+    list-style: none;
+    font-family: sans-serif;
+    margin-top: 45px;
+}
+
+#list > li {
+    display: inline-block;
+    margin: 35px;
+    text-align: center;
+}
+
+input {
+    width: 30px;
+}
+
+h2 {
+    font-style: normal;
+    font-size: 18px;
+}
+
+p {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 45px;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+#footer > li {
+    display: inline-block;
+    margin: 5px 10px 5px 10px;
+    font-size: 15px;
+}

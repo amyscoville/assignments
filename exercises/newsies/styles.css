@@ -1,0 +1,45 @@
+body {
+    font-family: 'Gentium Basic', serif;
+}
+
+h1 {
+    font-family: 'Eczar', serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.column {
+    display: inline-block;
+    width: 30%;
+    vertical-align: text-top;
+    padding: 10px;
+}
+
+img {
+    width: 45%;
+    float: left;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+.song-title {
+    font-style: italic;
+}
+
+.highlight {
+    background-color: yellow;
+}
