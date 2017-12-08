@@ -125,4 +125,24 @@ var frontBack = function(str) {
 
 console.log(frontBack('abcdefg'));
 
+function centuryFromYear(year) {
+    var str = String(year);
+    if (str.length === 4 && str.slice(-2) === '00') {
+        return Number(str.slice(0, 2));
+    } else if (str.length === 4) {
+        return Number(str.slice(0,2)) + 1;
+    } else if (str.length === 3 && str.slice(1) === '00') {
+        return Number(str[0]);
+    } else if (str.length === 3) {
+        return Number(str[0]) + 1;
+    } else if (str.length < 3) {
+        return 1;
+    }   
+}
+
+
+console.log(centuryFromYear(2000));
+console.log(centuryFromYear(2001));
+console.log(centuryFromYear(200));
+console.log(centuryFromYear(201));
 
