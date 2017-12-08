@@ -3,6 +3,52 @@
     src: url(SuperMario256.ttf);
 }
 
-header {
-    background-color: 
+body {
+    font-family: superMario256;
+    color: #ff0000;
+}
+
+.header {
+    background-color: #ffee00;
+}
+
+.header-col{
+     display: flex; 
+     flex-direction: column; 
+     justify-content: center; 
+}
+
+.luigi-row {
+    background-color: #ff0000;
+}
+
+.luigi-img {
+    text-align: center;
+}
+
+#luigi {
+    height: 29em;
+    padding: 2em;
+}
+.about-me {
+    text-align: center;
+}
+
+.describe {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1em;
+    font-weight: 900;
+}
+
+.yellow-footer {
+    background-color: #ffee00;
+}
+
+#shroom {
+    height: 5em;
+    padding: .3em;
+    float: right;
 }
