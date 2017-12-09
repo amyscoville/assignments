@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Form</title>
+</head>
+<body>
+    <form action="">
+        <h4>Enter first name:</h4>
+        <input class="own-line" type="text" placeholder="ex: Jaba" name="f-name">
+        <h4>Enter last name:</h4>
+        <input class="own-line" type="text" placeholder="ex: The Hut" name="l-name">
+        <h4>Enter age in years:</h4>
+        <input class="own-line" type="number" placeholder="Age (in years)" name="age">
+        <h4>Select gender:</h4>
+        Male<input type="radio" name="gender" value="Male"> 
+        Female<input type="radio" name="gender" value="Female"> 
+        <h4>Select destination:</h4>   
+        <select class="own-line" id="location">  
+            <option name="madrid-spain" value="Madrid, Spain">Madrid, Spain</option>
+            <option name="tokyo-japan" value="Tokyo, Japan">Tokyo, Japan</option>
+            <option name="rome-italy" value="Rome, Italy">Rome, Italy</option>
+        </select>
+        <div class="own-line">
+            <h4>Select dietary restrictions:</h4>
+            <input type="checkbox" name="checkbox" value="Vegetarian"> Vegetarian
+            <input type="checkbox" name="checkbox" value="Kosher"> Kosher
+            <input type="checkbox" name="checkbox" value="Lactose Free"> Lactose Free
+        </div> 
+        <div class="submit-div">
+            <input type="submit" class="submit-button" name="submit" id="submit">
+        </div>
+    </form>
+<script src="main.js"></script>
+</body>
+</html>
+
+<!-- First name (text input)
+Last name (text input)
+Age (number input)
+Gender (radio buttons with 2 or more options)
+Location they're traveling to (select box with at least 3 options. You're an airline that doesn't fly to many places...)
+Whether they have any dietary restrictions (check boxes for vegetarian, kosher, lactose free, etc. Include at least 3 options) -->
