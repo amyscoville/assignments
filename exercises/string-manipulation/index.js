@@ -44,8 +44,6 @@ if (description.length > 20) {
     console.log('Thanks for telling me a little about yourself. This is the info I have about you:\n' + description);
 }
 
-
-
 var complete = ask.keyInYN('Is this information complete?');
 
 if(complete) {
