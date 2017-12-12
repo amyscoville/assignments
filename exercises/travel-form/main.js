@@ -4,7 +4,8 @@ submit.onclick = function(event) {
     event.preventDefault();
     var firstName = document.getElementsByName('f-name')[0].value;
     var lastName = document.getElementsByName('l-name')[0].value;
-    var gender = document.querySelector('input[name=gender]:checked').value;
+    // var gender = document.querySelector('input[name=gender]:checked').value;
+    var gender = document.getElementsByName('gender');
     var destination = document.getElementById('location').value;
     var checkboxes = document.getElementsByName('checkbox');
     var dietaryResArr = [];
@@ -15,3 +16,4 @@ submit.onclick = function(event) {
     }
     alert('First Name: ' + firstName + '\n' + 'Last Name: ' + lastName + '\n' + 'Gender: ' + gender + '\n' + 'Destination: ' + destination + '\n' + 'Dietary Restrictions: ' + dietaryResArr);
 }
+

@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.my-col {
+    padding: 2px;
+}
+
+.main {
+    width: 750px;
+}
+
+.light-pink {
+    background-color: #F5C6D6;
+    height: 100px;
+}
+
+.hot-pink {
+    background-color: #EE2E84;
+    height: 100px;
+}
+
+.light-blue {
+    background-color: #85CFD8;
+    height: 100px;
+}
+
+.green {
+    background-color: #8DC63F;
+    height: 100px;
+}
+
+.orange {
+    background-color: #E76E34;
+    height: 100px;
+}

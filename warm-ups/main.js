@@ -146,3 +146,43 @@ console.log(centuryFromYear(2001));
 console.log(centuryFromYear(200));
 console.log(centuryFromYear(201));
 
+// Write a function that generates a completely random password including uppercase, lowercase, numeric, and symbol characters. The function should accept one argument, an integer defining how long the password should be.
+
+function genPassword(num){
+    var password = '';
+    for(var i = 0; i < num; i++) {
+        password += String.fromCharCode(Math.floor(Math.random() * 93) + 33);
+    }
+    return password;
+}
+
+console.log(genPassword(7));
+
+function antiCaps(str){
+    var arr = str.split('');
+    for (var i = 0; i < arr.length; i++) {
+        if(arr[i].match(/[A-Z]/)) {
+            arr[i] = arr[i].toLowerCase();
+        } else  {
+            arr[i] = arr[i].toUpperCase();
+        } 
+    }
+    return arr.join('');
+}
+
+console.log(antiCaps('Hello my name is Jane'));
+
+//it is more efficient to do this without splitting the string into an array (use greedy/empty bucket method)
+function antiCaps2(str) {
+    var output = '';
+    for (var i = 0; i < str.length; i++) {
+        if(str[i].match(/[A-Z]/)) {
+            output += str[i].toLowerCase();
+        } else {
+            output += str[i].toUpperCase();
+        }
+    }
+    return output;
+}
+
+console.log(antiCaps2('hELLo'));
