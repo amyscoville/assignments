@@ -1,0 +1,1 @@
+This folder holds all exercises completed during my time at V School. 

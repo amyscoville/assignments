@@ -1,0 +1,1 @@
+Create a color grid like the other color grids, this time using CSS Grid. Make it responsive like the responsive color grid earlier in the exercises folder.
