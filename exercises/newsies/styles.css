@@ -1,17 +1,30 @@
 body {
-    font-family: 'Gentium Basic', serif;
+    background-color: #f9f7f1;
+    color: #2f2f2f;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h1 {
-    font-family: 'Eczar', serif;
+    font-family: 'Spectral SC', serif;
     font-weight: bold;
     text-align: center;
-    font-size: 45px;
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sub-headline {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: center;
 }
 
 h2 {
     font-size: 25px;
     font-weight: bold;
+    font-style: italic;
 }
 
 h3 {
