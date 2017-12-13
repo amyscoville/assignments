@@ -1,1 +1,1 @@
-This is a collection of all of my V School assignments.
+This is a collection of all of my V School exercises and projects.

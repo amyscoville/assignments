@@ -1,0 +1,1 @@
+Download this repository (https://github.com/VSchool/bugs-on-a-plane) and search through it for any bugs. There will be both syntactical and logical errors.

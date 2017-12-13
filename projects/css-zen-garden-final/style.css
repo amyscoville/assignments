@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+	font-family: 'Libre Baskerville', serif;
+	color: #325050;
+	font-size: 100%;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 19em;
+    grid-template-areas:
+        "h1 h2";
+    border-top: solid 12px rgba(19, 67, 71, 0.9);
+    background-image: url(images/gridlines.png), url(images/contours.png), url(images/noise.png), url(/images/huntington.jpg);
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto, 50% auto, auto, cover;
+    height: 19em;
+    padding-bottom: 0px;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(5);
+    grid-template-areas:  
+        "s sb1"
+        "p sb2"
+        "r b"
+        "fc fc"
+        "fm fm";
+}
+
+@media (max-width: 1130px) {
+    .container1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: 
+            "h1"
+            "h2";
+        height: 17em;
+    }
+    
+    .container2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7);
+        grid-template-areas:
+            "s"
+            "p"
+            "r"
+            "fm"
+            "fc"
+            "sb1"
+            "sb2";
+    }
+}
+
+.header1, .header2 {
+    color: #fff;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px;
+}
+
+.header1 {
+    grid-area: h1;
+}
+
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 3.2em;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    color: rgba(255,255,255,0.6);
+    font-size: 1.6em;
+    margin-top: 5px;
+}
+
+.header2 {
+    grid-area: h2;
+    background-color: rgba(19, 67, 71, 0.25);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view {
+    background-color: rgba(221, 221, 221, 0.1);
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.2em;
+    display: flex;
+    align-items: baseline;
+    margin-left: 1px;
+    margin-right: 1px;
+    height: 70px;
+    width: 295px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.view:hover, .arrow:hover {
+    background-color: rgba(221, 221, 221, 0.25);
+}
+
+.arrow {
+    text-align: center;
+    font-size: 6em;
+    background-color: rgba(221, 221, 221, 0.1);
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+}
+
+.arrow div {
+    margin-top: -12px;
+}
+
+.summary {
+    grid-area: s;
+    background-color: #fff;
+    margin: 5em 4em 5em 6.5em;
+    line-height: 40px;
+}
+
+.sidebar1 {
+    grid-area: sb1;
+    background-color: #e3eee8;
+}
+
+.participation {
+    grid-area: p;
+    background-color: palegoldenrod;
+}
+
+.sidebar2 {
+    grid-area: sb2;
+    background-color: paleturquoise;
+}
+
+.requirements {
+    grid-area: r;
+    background-color: paleturquoise;
+}
+
+.blank {
+    grid-area: b;
+    background-color: thistle;
+}
+
+.footer-credits {
+    grid-area: fc;
+    background-color: rgb(1, 153, 153);
+}
+
+.footer-menu {
+    grid-area: fm;
+    background-color: rgb(0, 34, 34);
+}
+
+.logo-title {
+    display: flex;
+}
+
+.logo > img {
+    height: 7em;
+    width: 7em;
+    margin-right: 20px;
+}
+
+h3 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.9em;
+    margin-top: .5em;
+}

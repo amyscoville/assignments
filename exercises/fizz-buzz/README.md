@@ -1,0 +1,1 @@
+Write a program that prints numbers to the console, but replaces multiples of both 3 & 5 with "fizzbuzz', multiples of 3 with 'fizz,' and multiples of 5 with 'buzz.'

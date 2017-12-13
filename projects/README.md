@@ -1,0 +1,1 @@
+This folder holds all projects assigned and completed during my time at V School. Projects differ from exercises in that they are submitted to and evaluated by instructors.
