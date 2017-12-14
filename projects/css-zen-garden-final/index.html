@@ -34,8 +34,8 @@
     <div class="container2">
         <div class="summary">
             <div id="zen-summary" role="article">
-                <p>A demonstration of what can be accomplished through <abbr title="Cascading Style Sheets">CSS</abbr>-based design. Select any style sheet from the list to load it into this page.</p>
-                <p>Download the example <a href="/examples/index" title="This page's source HTML code, not to be modified.">html file</a> and <a href="/examples/style.css" title="This page's sample CSS, the file you may modify.">css file</a></p>
+                <p>A demonstration of what can be accomplished through <abbr class="css">CSS</abbr>-based design. Select any style sheet from the list to load it into this page.</p>
+                <p>Download the example <a class="html-css" href="#"> html file</a> and <a class="html-css" href="#"> css file</a></p>
             </div>
     
             <div class="preamble" id="zen-preamble" role="article">
@@ -51,26 +51,32 @@
             </div>
         </div>
         <div class="sidebar1">
-            <nav class="side-navbar">
-                <ul>
-                <li>
+            <ul class="sb1-menu">
+                <li class="sb1-li">
                     <a href="#" class="design-name">Mid Century Modern</a> by <a href="http://andrewlohman.com/" class="designer-name">Andrew Lohman</a>
-                </li>					<li>
+                </li>					
+                <li class="sb1-li">
                     <a href="/220/" class="design-name">Garments</a> by <a href="http://danielmall.com/" class="designer-name">Dan Mall</a>
-                </li>					<li>
+                </li>					
+                <li class="sb1-li">
                     <a href="/219/" class="design-name">Steel</a> by <a href="http://steffen-knoeller.de" class="designer-name">Steffen Knoeller</a>
-                </li>					<li>
+                </li>					
+                <li class="sb1-li">
                     <a href="/218/" class="design-name">Apothecary</a> by <a href="http://trentwalton.com" class="designer-name">Trent Walton</a>
-                </li>					<li>
+                </li>					
+                <li class="sb1-li">
                     <a href="/217/" class="design-name">Screen Filler</a> by <a href="http://elliotjaystocks.com/" class="designer-name">Elliot Jay Stocks</a>
-                </li>					<li>
+                </li>					
+                <li class="sb1-li">
                     <a href="/216/" class="design-name">Fountain Kiss</a> by <a href="http://jeremycarlson.com" class="designer-name">Jeremy Carlson</a>
-                </li>					<li>
+                </li>					
+                <li class="sb1-li">
                     <a href="/215/" class="design-name">A Robot Named Jimmy</a> by <a href="http://meltmedia.com/" class="designer-name">meltmedia</a>
-                </li>					<li>
+                </li>					
+                <li class="sb1-li">
                     <a href="/214/" class="design-name">Verde Moderna</a> by <a href="http://www.mezzoblue.com/" class="designer-name">Dave Shea</a>
-                </li>					</ul>
-            </nav>
+                </li>					
+            </ul>
         </div>
         <div class="participation">
             <div class="participation-text">
@@ -87,7 +93,28 @@
                 </div>
             </div>
         </div>
-        <div class="sidebar2"></div>
+        <div class="sidebar2">
+            <ul class="sb2-menu">
+                <li class="sb2 view-css">
+                    <a href="style.css" title="View the source CSS file of the currently-viewed design.">
+                        View This Design&#8217;s <abbr title="Cascading Style Sheets">CSS</abbr></a>
+                </li>
+                <li class="sb2 css-resources">
+                    <a href="http://www.mezzoblue.com/zengarden/resources/" title="Links to great sites with information on using CSS.">
+                        <abbr title="Cascading Style Sheets">CSS</abbr> Resources</a>
+                </li>
+                <li class="sb2 zen-faq">
+                    <a href="http://www.mezzoblue.com/zengarden/faq/" title="A list of Frequently Asked Questions about the Zen Garden.">
+                        <abbr title="Frequently Asked Questions">FAQ</abbr></a>
+                </li>
+                <li class="sb2 zen-submit">
+                    <a href="http://www.mezzoblue.com/zengarden/submit/" title="Send in your own CSS file.">Submit a Design</a>
+                </li>
+                <li class="sb2 sb2-last zen-translations">
+                    <a href="http://www.mezzoblue.com/zengarden/translations/" title="View translated versions of this page.">Translations</a>
+                </li>
+            </ul>
+        </div>
         <div class="requirements">
             <div id="zen-requirements" role="article">
                 <h3>Requirements</h3>
@@ -99,8 +126,18 @@
             </div>
         </div>
         <div class="blank"></div>
-        <div class="footer-credits"></div>
-        <div class="footer-menu"></div>
+        <div class="footer-credits">
+                <p role="contentinfo">By <a href="http://www.mezzoblue.com/">Dave Shea</a>. Bandwidth graciously donated by <a href="http://www.mediatemple.net/">mediatemple</a>. Now available: <a href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/">Zen Garden, the book</a>.</p>                
+        </div>
+        <div class="footer-menu">
+            <div class="glyph-container">
+                <a href="#" class="five"></a> 
+                <a href="#" class="three"></a>
+                <a href="#" class="c"></a>
+                <a href="#" class="a"></a>
+                <a href="#" class="g"></a>
+            </div>
+        </div>
     </div>
 </body>
 </html>

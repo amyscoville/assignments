@@ -9,6 +9,20 @@ body {
 	font-size: 100%;
 }
 
+abbr {
+    /* text-decoration: none; */
+    color: #325050;
+}
+
+a {
+    text-decoration: none;
+    color: #0d8ba1 
+}
+
+a:visited {
+    color: #1a5952;
+}
+
 .container1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -36,6 +50,7 @@ body {
 }
 
 .container2 {
+    background-color: #fff;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(5);
@@ -139,15 +154,48 @@ h2 {
     background-color: rgba(221, 221, 221, 0.25);
 }
 
+/* content section (everything below the header) */
 .summary {
     grid-area: s;
     background-color: #fff;
-    
+}
+
+.html-css {
+    font-family: 'Julius Sans One', sans-serif;
+    text-decoration: none;
+    color: #809b7e;
+    font-size: 1.2em;
+}
+
+.html-css::before {
+    font-family: 'VerdeModerna';
+    font-size: .8em;
+    content: 'D';
+    color: #a9b995;
+    background: #d9e1cd;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+.html-css:hover {
+    background-color: #0d8ba1;
+    padding: 5px;
+    color: white;
+}
+
+.html-css:hover::before {
+    font-family: 'VerdeModerna';
+    font-size: .8em;
+    content: 'D';
+    color: white;
+    background: #0a7c8d;
+    padding: 2px;
+    border-radius: 2px;
 }
 
 .summary, .participation-text, .requirements {
-    margin: 5em 4em 5em 10em;
-    line-height: 40px;
+    margin: 5em 4em 5em 9em;
+    line-height: 35px;
 }
 
 .sidebar1 {
@@ -163,7 +211,7 @@ ul {
     margin-top: 5em;
 }
 
-li {
+.sb1-li {
     font-style: italic;
     color: #c0cac3;
     padding-bottom: 30px;
@@ -171,7 +219,7 @@ li {
     width: 60%;
 }
 
-li:last-child {
+.sb1-li:last-child {
     border-bottom: none;
 }
 
@@ -195,6 +243,10 @@ li:last-child {
     font-size: 0.9em;
 }
 
+.participation, .sidebar2 {
+    background-image: url(images/bamboo.png);
+}
+
 .participation {
     grid-area: p;
     background-color: rgba(189,223,205, .6);
@@ -203,6 +255,27 @@ li:last-child {
 .sidebar2 {
     grid-area: sb2;
     background-color: rgba(171,210,190,.7);
+}
+
+.sb2-menu {
+    margin-top: 6em;
+}
+
+.sb2-menu a {
+    font-family: 'Julius Sans One', sans-serif;
+    font-style: normal;
+    font-size: 1.2em;
+    color: #607476;
+    text-decoration: none;
+    display: block;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-top: .5px solid #c0cac3;
+    width: 65%;
+}
+
+.sb2-last {
+    border-bottom: .5px solid #c0cac3;
 }
 
 .requirements {
@@ -237,6 +310,104 @@ li:last-child {
 
 h3 {
     font-family: 'Julius Sans One', sans-serif;
-    font-size: 1.9em;
-    margin-top: .5em;
+    font-size: 1.8em;
+    margin-top: .7em;
 }
+
+.footer-credits {
+    height: 320px;
+    background-image: url(images/gridlines.png), url(images/contours.png), url(images/noise.png), url(images/koi.jpg);
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto 50% auto auto cover;
+    background-position: left bottom;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 2em;
+    font-style: italic;
+    padding-right: 5.5em;
+    padding-left: 5.5em;
+    line-height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-credits > p > a {
+    color: rgb(211, 211, 211);
+    text-decoration: none;
+    font-style: normal;
+}
+
+.footer-credits > p > a:hover {
+    text-decoration: underline;
+}
+
+@font-face {
+    font-family: 'VerdeModerna';
+    src: url(verdemoderna.woff) format('woff');
+}
+
+.footer-menu {
+    height: 175px;
+    background-color: #004448;
+    font-family: 'VerdeModerna';
+    font-size: 4.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glyph-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+}
+
+.glyph-container > a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.five::before {
+    content: '5';
+}
+
+.five:hover::before {
+    content: '%'
+}
+
+.three::before {
+    content: '3';
+}
+
+.three:hover::before {
+    content: '#';
+}
+
+.c::before {
+    content: 'c';
+}
+
+.c:hover:before {
+    content: 'C';
+}
+
+.a::before{
+    content: 'a';
+}
+
+.a:hover::before {
+    content: 'A';
+}
+
+.g::before {
+    content: 'g';
+}
+
+.g:hover::before {
+    content: 'G';
+}
+
+
+
