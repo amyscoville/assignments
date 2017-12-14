@@ -309,8 +309,12 @@ ul {
             "li5 li6"
             "li7 li8";
         margin: 5px;
+        margin-left: 6%;
         padding: 5px;
-        height: 320px;
+    }
+
+    .sb1-menu > li {
+        width: 100%;
     }
 
     .li1 {
@@ -343,6 +347,10 @@ ul {
 
     .li8 {
         grid-area: li8;
+    }
+
+    #last-one {
+        border-bottom: none;
     }
 }
 
@@ -405,6 +413,51 @@ ul {
     border-bottom: .5px solid #c0cac3;
 }
 
+@media (max-width: 1130px) {
+    .sb2-menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+            "2li1 2li2"
+            "2li3 2li4"
+            "2li5 2li5";
+        margin-top: 20px;
+        margin-left: 6%;
+        padding-left: 5px;
+    }
+
+    .sb2-menu > li {
+        width: 100%;
+    }
+
+    .sb2-menu a {
+        border-top: none;
+        border-bottom: .5px solid #c0cac3;
+        width: 100%;
+    }
+
+    .view-css {
+        grid-area: 2li1;
+    }
+
+    .css-resources {
+        grid-area: 2li2;
+    }
+
+    .zen-faq {
+        grid-area: 2li3;
+    }
+
+    .zen-submit {
+        grid-area: 2li4;
+    }
+
+    .zen-translations {
+        grid-area: 2li5;
+    }
+}
+
 .requirements {
     grid-area: r;
     background-color: #fff;
@@ -413,11 +466,6 @@ ul {
 .blank {
     grid-area: b;
     background-color: rgb(227,238,232);
-}
-
-.footer-credits {
-    grid-area: fc;
-    background-color: rgb(1, 153, 153);
 }
 
 .footer-menu {
@@ -432,16 +480,18 @@ h3 {
 }
 
 .footer-credits {
+    grid-area: fc;
+    background-color: rgb(1, 153, 153);
     height: 320px;
     background-image: url(images/gridlines.png), url(images/contours.png), url(images/noise.png), url(images/koi.jpg);
     background-repeat: repeat, repeat, repeat, no-repeat;
     background-size: auto 50% auto auto cover;
-    background-position: left bottom;
+    background-position: 75%;
     color: rgba(255, 255, 255, 0.4);
     font-size: 2em;
     font-style: italic;
-    padding-right: 5.5em;
-    padding-left: 5.5em;
+    padding-right: 6%;
+    padding-left: 6%;
     line-height: 2em;
     display: flex;
     justify-content: center;
@@ -457,6 +507,12 @@ h3 {
 
 .footer-credits > p > a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 520px) {
+    .footer-credits > p {
+        font-size: 65%;
+    }
 }
 
 @font-face {
@@ -479,6 +535,12 @@ h3 {
     justify-content: space-between;
     align-items: center;
     width: 55%;
+}
+
+@media (max-width: 1130px) {
+    .glyph-container {
+        width: 85%;
+    }
 }
 
 .glyph-container > a {
