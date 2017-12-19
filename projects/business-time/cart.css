@@ -1,0 +1,42 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.table-bkgrd {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 3%;
+}
+
+table {
+    width: 100%;
+    font-size: 20px;
+    border-collapse: collapse;
+}
+
+@media (max-width: 575px) {
+    table {
+        font-size: 15px;
+    }
+}
+
+th, td {
+    border: 1.5px solid rgb(48, 48, 48);
+    padding: 1%;
+}
+
+.item-name {
+    width: 60%;
+}
+
+.price, .total {
+    width: 15%;
+}
+
+.qty {
+    width: 10%;
+}
+
+.final-total {
+    font-weight: 400;
+}

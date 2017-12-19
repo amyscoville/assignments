@@ -3,7 +3,7 @@ body {
     font-weight: 300;
     background-image: url(/images/pexels-photo-139306.jpeg);
     background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-attachment: fixed;
 }
 

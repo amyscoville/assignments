@@ -1,0 +1,78 @@
+.navbar {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.about {
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 50px;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: .3fr;
+    grid-gap: 2%;
+    grid-template-areas:
+        "one two three four";
+    overflow: scroll;       
+}
+
+@media (max-width: 1200px) {
+    .about {
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "one one two two"
+            "four four three three";
+    }
+}
+
+@media (max-width: 770px) {
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "one"
+            "two"
+            "three"
+            "four";
+    }
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+@media (max-width: 450px) {
+    h2 {
+        font-size: 20px;
+    }
+}
+
+.shop {
+    grid-area: one;
+    float: right;
+    width: 100%;
+}
+
+.about-letters {
+    grid-area: two;
+}
+
+.fam-pic {
+    grid-area: three;
+    float: left;
+    margin-right: 2%;
+    width: 100%;
+}
+
+
+.about-owner {
+    grid-area: four;
+}
+
+.about-letters, .about-owner {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5%;
+}
+
