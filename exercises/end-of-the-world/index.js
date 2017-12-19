@@ -1,25 +1,20 @@
-// let counter = 0;
+let button = document.getElementById('start');
+let display = document.getElementById('display');
+let clock = 20;
+let countdownId = 0;
 
-// function add() {
-//     let beginningOfTime = new Date(counter);
-//     let minutes = beginningOfTime.getUTCMinutes();
-//     let seconds = beginningOfTime.getUTCSeconds();
-//     let mills = beginningOfTime.getUTCMilliseconds();
-//     console.log(minutes + ":" + seconds + ":" + mills);
-//     counter += 10;
-//     if (counter === 60000) {
-//         clearInterval(timer);
-//     }
-// }
-
-// let timer = setInterval(add, 10);
-
-let counter = 20;
-
-function countdown() {
-    let div = document.getElementById('display');
-    div.innerHTML = ;
-    counter--;
+button.onclick = function () {
+    countdownId = setInterval("countdown()", 1000);
+    display.style.color = 'red';
 }
 
-let countdownTimer = setInterval(countdown, )
+function countdown() {
+    if(clock > 0) {
+        clock = clock -1;
+        display.innerHTML = '00:00:' + String(clock);
+    } else {
+        clearInterval(countdownId);
+        display.style.fontSize = "60px";
+        display.innerHTML = 'The end of the world has come upon us.'
+    }
+}

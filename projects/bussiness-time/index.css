@@ -1,7 +1,10 @@
 body {
     font-family: 'Lato', sans-serif;
+    font-weight: 300;
     background-image: url(/images/pexels-photo-139306.jpeg);
-    background-size: contain;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .header {
@@ -90,97 +93,7 @@ body {
     }
 }
 
-.main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: 
-        "p1 p2 p3"
-        "p4 p5 p6"
-        "p7 p8 p9";
-    grid-gap: 50px;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    
-}
 
-@media (max-width: 1100px) {
-    .main {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        grid-template-areas: 
-            "p1 p2" 
-            "p3 p4" 
-            "p5 p6"
-            "p7 p8" 
-            "p9 .";
-    }
-}
-
-@media (max-width: 650px) {
-    .main {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(9, 1fr);
-        grid-template-areas: 
-            "p1" 
-            "p2" 
-            "p3" 
-            "p4" 
-            "p5" 
-            "p6"
-            "p7" 
-            "p8" 
-            "p9";
-    }
-}
-
-.p1 {
-    grid-area: p1;
-}
-
-.p2 {
-    grid-area: p2;
-}
-
-.p3 {
-    grid-area: p3;
-}
-
-.p4 {
-    grid-area: p4;
-}
-
-.p5 {
-    grid-area: p5;
-}
-
-.p6 {
-    grid-area: p6;
-}
-
-.p8 {
-    grid-area: p8;
-}
-
-.p9 {
-    grid-area: p9;
-}
-
-.p10 {
-    grid-area: p10;
-}
-
-.product {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-.details {
-    padding-left: 10%;
-}
-
-.photo {
-    width: 100%;
-}
 
 
 

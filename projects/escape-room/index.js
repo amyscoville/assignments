@@ -45,12 +45,15 @@ function openBox() {
 
 let currGame = new Game();
 
-console.log('You\'ve woken up in a dim, damp room. Snakes slither up the walls and ivy hangs from the low ceiling.\nThe tiny room appears to be an abandoned jail cell. \nYour memory is returning: You were on a small group expedition in the Amazon, and decided to do some exploring on your own. \nYou stumbled upon a group of people doing something suspicious, and tried to get a better look without being seen. \nAlas, one of them spotted you. You turned to run, but were captured before you could escape. \nYour last memory is of being injected with something and getting very sleepy. \nAs you come to your senses, you hear voices. They\'re discussing how to get rid of you. Someone will be here in 10 minutes. \nFind the key, open the door, and escape before they arrive! \nHere are some basic commands to get you started: \n    1)look \n    2)take \n    3)open \nFeel free to try other commands, too.'); 
+console.log('You\'ve woken up in a dim, damp room. Snakes slither up the walls and ivy hangs from the low ceiling.\nThe tiny room appears to be an abandoned jail cell. \nYour memory is returning: You were on a small group expedition in the Amazon, and decided to do some exploring on your own. \nYou stumbled upon a group of people doing something suspicious, and tried to get a better look without being seen. \nAlas, one of them spotted you. You turned to run, but were captured before you could escape. \nYour last memory is of getting an injection and becoming delirious. \nAs you come to your senses, you hear voices. They\'re discussing how to get rid of you. Someone will be here in 3 minutes. \nFind the key, open the door, and escape before they arrive! \nHere are some basic commands to get you started: \n    1)look \n    2)take \n    3)open \nFeel free to try other commands, too.'); 
 
 while (!currGame.gameOver) {
     let action = ask.question('What would you like to do?');
     action = action.toLowerCase();
-    if(action.includes('look')) {
+    if(action.includes('hole')) {
+        console.log('A venemous snake pops its head out of the hole and bites you. The jail cell opens as you struggle for air. You die before they can finish you off.');
+            break;
+    } else if(action.includes('look')) {
         if(action.includes('box')) {
             if(currGame.box === 'locked') {
                 console.log('The box is locked. Unless you have x-ray vision, you\'ll need to open the box to look inside.');
@@ -59,9 +62,6 @@ while (!currGame.gameOver) {
                 console.log('The box is empty. You have what you need to unlock the door.');
                 continue;
             } 
-        } else if (action.includes('hole')) {
-            console.log('A venemous snake pops its head out and bites you. The jail cell opens as you struggle for air. You die before they can finish you off.');
-            break;
         } else {
             console.log('There is a hole in the brick wall, a rusty metal box in the corner, and a locked jail cell door.');
         }

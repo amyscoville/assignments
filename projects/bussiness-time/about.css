@@ -1,0 +1,47 @@
+.navbar {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.about {
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 50px;
+    height: 100vh;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+        "one two three four"
+        
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.shop {
+    grid-area: one;
+    float: right;
+    width: 80%;
+}
+
+.about-letters {
+    grid-area: two;
+}
+
+.fam-pic {
+    grid-area: three;
+    float: left;
+    margin-right: 2%;
+    width: 80%;
+}
+
+
+.about-owner {
+    grid-area: four;
+}
+
