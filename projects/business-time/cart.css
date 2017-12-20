@@ -4,20 +4,14 @@ body {
 }
 
 .table-bkgrd {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.4);
     padding: 3%;
 }
 
 table {
     width: 100%;
-    font-size: 20px;
+    font-size: 15px;
     border-collapse: collapse;
-}
-
-@media (max-width: 575px) {
-    table {
-        font-size: 15px;
-    }
 }
 
 th, td {
@@ -37,6 +31,20 @@ th, td {
     width: 10%;
 }
 
+@media (max-width: 1250px) {
+    .item-name {
+        width: 40%;
+    }
+    
+    .price, .total {
+        width: 20%;
+    }
+    
+    .qty {
+        width: 20%;
+    }
+}
+
 #final-row  {
     font-weight: 400;
 }
@@ -48,9 +56,15 @@ th, td {
     background-color:  rgba(255, 255, 255, 0.75);
     height: 35px;
     width: 100px;
-    font-size: 15px;
+    font-size: .9em;
 }
+
+/* @media (max-width: 1580px) {
+
+} */
 
 #empty-cart {
     margin-right: 0;
+    text-align: center;
+    font-size: .9em;
 }

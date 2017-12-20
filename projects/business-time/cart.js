@@ -1,13 +1,16 @@
-let cart = JSON.parse(localStorage.getItem('cart'));
-console.log('Parsed cart:', cart);
+console.log(JSON.parse(localStorage.getItem('cart')));
 
-console.log(localStorage);
+let cart = JSON.parse(localStorage.getItem('cart')) || {};
 
 document.onload = displayCart();
 
 function displayCart() {
-    let table = document.getElementById('myTable');
+    if(localStorage.getItem('cart')) {
+        let table = document.getElementById('myTable');
     for (let key in cart) {
+        if (key === 'totalPrice' || key === 'totalQty') {
+            continue;
+        }
         let row = document.createElement('tr');
         let item = document.createElement('td');
         item.innerHTML = cart[key].name;
@@ -23,14 +26,20 @@ function displayCart() {
         row.appendChild(total);
         table.appendChild(row);
     }
+    setFinalRow();
+    }
+}
+
+function setFinalRow() {
+    let table = document.getElementById('myTable');
     let lastRow = document.createElement('tr');
     let emptyItem = document.createElement('td');
     let emptyPrice = document.createElement('td');
     let totalQty = document.createElement('td');
     let totalPrice = document.createElement('td');
 
-    totalQty.innerHTML = cart.totalQty;
-    totalPrice.innerHTML = `\$${cart.totalPrice}.00`;
+    totalQty.innerHTML = `Total Qty: ${cart.totalQty}`;
+    totalPrice.innerHTML = `Total Price: \$${cart.totalPrice}.00`;
 
     lastRow.appendChild(emptyItem);
     lastRow.appendChild(emptyPrice);
@@ -47,5 +56,7 @@ emptyCartButton.onclick = function() {
     cart = {};
     displayCart();
 }
+
+    
 
     
