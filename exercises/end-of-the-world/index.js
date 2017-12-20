@@ -1,58 +1,42 @@
-// let button = document.getElementById('start');
-// let display = document.getElementById('display');
-// let clock = 20;
-// let countdownId = 0;
-
-// button.onclick = function () {
-//     countdownId = setInterval("countdown()", 1000);
-//     display.style.color = 'red';
-// }
-
-// function countdown() {
-//     if(clock > 0) {
-//         clock = clock -1;
-//         display.innerHTML = '00:00:' + String(clock);
-//     } else {
-//         clearInterval(countdownId);
-//         display.style.fontSize = "60px";
-//         display.innerHTML = 'The end of the world has come upon us.'
-//     }
-// }
-
-let form = document.getElementById('myForm');
-let days = document.getElementById('days');
-let hours = document.getElementById('hours');
-let minutes = document.getElementById('minutes');
+let hours = '00';
+let minutes = '01';
+let seconds = '05';
 let button = document.getElementById('start');
 let display = document.getElementById('display');
 
-button.onclick = function () {
-    if(days.length < 2) {
-        days = '0' + days;
-    if (hours.length < 2) {
-        hours = '0' + hours;
-    } 
-    if (minutes.length < 2) {
-        minutes = '0' + minutes;
+function convertInt(int){
+    str = String(int);
+    if(str.length < 2) {
+        return '0' + str;
     }
-    display.innerHTML = `${+days}:${+hours}:${+minutes}`;
+    return str;
+}
+
+button.onclick = function () {
+    display.innerHTML = `${hours}:${minutes}:${seconds}`;
     countdownId = setInterval("countdown()", 1000);
     display.style.color = 'red';
 }
 
 function countdown() {
-    minutes = +minutes;
     hours = +hours;
-    days = +days;
-    if(minutes > 0) {
-        minutes = minutes - 1;
-        display.innerHTML = `${days}:${hours}:${minutes}`;
-    } else if (minutes === 0) {
-        
+    minutes = +minutes;
+    seconds = +seconds;
+    if(seconds > 0 || minutes > 0 || hours > 0) {
+        if(seconds > 0) {
+            seconds = seconds - 1;
+        } else if (seconds === 0 && minutes > 0) {
+            seconds = 59;
+            minutes = minutes - 1;
+        } else if (seconds === 0 && minutes === 0 && hours >= 1) {
+            seconds = 59;
+            minutes = 59;
+            hours = hours - 1;
+        }
+        display.innerHTML = `${convertInt(hours)}:${convertInt(minutes)}:${convertInt(seconds)}`;
+    } else if (seconds === 0 && minutes === 0 && hours === 0) {
+        clearInterval(countdownId);
+        display.style.fontSize = "60px";
+        display.innerHTML = 'The end of the world has come upon us.'
     }
-    // } else {
-    //     clearInterval(countdownId);
-    //     display.style.fontSize = "60px";
-    //     display.innerHTML = 'The end of the world has come upon us.'
-    // }
 }
