@@ -1,0 +1,62 @@
+{
+    "appetizers": [ 
+        {
+            "name": "onion rings", 
+            "indredients": ["onions", "bread crumbs (CONTAINS: WHEAT)", "oil"],
+            "description": "Hot outta the pot!"    
+        },{
+            "name": "pickles",
+            "ingredients": ["cucumbers", "vinegar"],
+            "description": "Sour with a crunch"
+        } 
+    ], 
+    
+    "cold sandwiches": [
+        {
+            "name": "bologna",
+            "ingredients": ["wonder bread", "bologna", "american cheese", "mayo"],
+            "description": "One bite takes you back to your redneck roots"
+        }, {
+            "name": "italian",
+            "ingredients": ["hoagie bun", "dijon mustard", "garlic aioli", "salami", "other italian meats", "lettuce", "provolone cheese"],
+            "description": "Great sandwich"
+        }
+    ],
+    
+    "hot sandwiches": [
+        {
+            "name": "fajita bambita",
+            "ingredients": ["steak", "bell peppers", "onions", "fajita seasonsings", "flatbread"],
+            "description": "This is a really boring sandwich"
+        },
+        { 
+            "name":"hot mama", 
+            "ingredients": ["meatballs", "hoagies"],
+            "description": "Standard meatball sandwich"
+        }
+    ],
+
+    "desserts": [
+        {
+            "name": "chocolate cream pie",
+            "ingredients": ["chocolate", "cream", "pie"],
+            "description": "Chocolatey. Creamy. Pie-y." 
+        }, {
+            "name": "oreo milkshake",
+            "ingredients": ["oreos", "milk", "shake"],
+            "description": "We put some milk and some oreos in a cup and shook them."
+        }
+    ],
+
+    "drinks": [
+        {
+            "name": "coke", 
+            "ingredients": ["water", "carbonation", "flavor"],
+            "description": "Everyone's favorite. Unless you like Pepsi better."
+        },{
+            "name": "pepsi", 
+            "ingredients": ["water", "carbonation", "flavor"],
+            "description": "Cola. Unless you're a Coke snob then this is not cola."
+        }
+    ]        
+}
