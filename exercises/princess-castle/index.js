@@ -1,55 +1,70 @@
 class Player {
-    constructor(star) {
-        this.name;
+    constructor(name) {
+        this.playName = name;
+        this.namePicked = '';
         this.totalCoins = 0;
         this.status = 'Small';
-        this.star = star;
+        this.star = false;
         this.gameActive = true;
     }
     setName(namePicked) {
         this.name = namePicked;
     }
     gotHit() {
-        if(this.status === 'Powered Up') {
-            this.status = 'Big';
-        } else if (this.status === 'Big') {
-            this.status = 'Small';
-        } else if (this.status === 'Small') {
-            this.status = 'Dead';
-            this.gameActive = false;
+        switch(this.status) {
+            case 'Powered Up':
+                this.status = 'Big';
+                this.star = false;
+                break;
+            case 'Big':
+                this.status = 'Small';
+                break;
+            case 'Small':
+                this.status = 'Dead';
+                this.gameActive = false;
         }
     }
     gotPowerup() {
-        //called when powerup is received
-        if (this.status === 'Small') {
-            this.status = 'Big';
-        } else if (this.status === 'Big') {
-            this.status = 'Powered Up';
+        switch (this.status) {
+            case 'Small':
+                this.status = 'Big';
+                break;
+            case 'Big': 
+                this.status = 'Powered Up';
+                this.star = true;
         } 
     }
     addCoin() {
         this.totalCoins++;
     }
     print() {
-        console.log(`Name: ${this.name} \nTotal Coins: ${this.totalCoins} \nStatus: ${this.status} \nStar: ${this.star}`);
+        for(let key in this) {
+            console.log(`${key}: ${this[key]}`);
+        }
     }
 }
 
-let mario = new Player(true);
-mario.print();
-mario.setName('Mario');
-mario.gotPowerup();
-mario.print();
-mario.gotPowerup();
-mario.print();
-mario.gotHit();
-mario.print();
+let amy = new Player('Amy');
+amy.setName('Mario');
+
 
 
 function randomRange() {
-    return Math.floor((Math.random() * 2));
+    return ~~((Math.random() * 3));
 }
-
-console.log(randomRange());
+ 
+while(amy.gameActive) {
+     switch(randomRange()) {
+         case 0:
+            amy.gotHit();
+            break;
+        case 1:
+            amy.gotPowerup();
+            break;
+        case 2:
+            amy.addCoin();
+     }
+     amy.print();
+ }
 
 
