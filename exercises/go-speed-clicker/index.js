@@ -15,7 +15,6 @@ button.onclick = function () {
         countdownDisplay.innerHTML = `${countdownTime} seconds left!`;
     }
     counter++;
-    console.log(counter);
     display.innerHTML = counter;
     localStorage.setItem('counter', counter);
 };
