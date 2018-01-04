@@ -1,0 +1,22 @@
+.services-wrapper {
+    background-color: rgba(255,255,255, 0.8);
+    height:500px;
+    width: 400px;
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    padding: 30px;
+    display: inline-block;
+}
+
+
+
+.services-list {
+    padding: 20px;
+    list-style: none;
+    font-size: 20px;
+}
+
+.services-li {
+    margin: 10px;
+}

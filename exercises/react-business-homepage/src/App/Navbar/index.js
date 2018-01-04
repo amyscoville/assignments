@@ -3,8 +3,14 @@ import './index.css';
 
 function Navbar() {
     return (
-        <div>
-            <p>This is the navbar content</p>
+        <div className='navbar-wrapper'>
+            <div className='restaurant-name'>Punjab Palace</div>
+            <ul className='navbar-list'>
+                <li className='navbar-li'><a href="#">HOME</a></li>
+                <li className='navbar-li'><a href="#">MENU</a></li>
+                <li className='navbar-li'><a href="#">LOCATIONS</a></li>
+                <li className='navbar-li'><a href="#">ORDER ONLINE</a></li>
+            </ul>
         </div>
     );
 }

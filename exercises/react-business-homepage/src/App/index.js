@@ -3,16 +3,14 @@ import './index.css';
 
 //components
 import Navbar from './Navbar';
-import Products from './Products';
-import Info from './Info';
 import Footer from './Footer';
+import Main from './Main'
 
 function App(props) {
     return (
         <div className="app-wrapper">
             <Navbar></Navbar>
-            <Products></Products>
-            <Info></Info>
+            <Main></Main>
             <Footer></Footer>
         </div>
     );

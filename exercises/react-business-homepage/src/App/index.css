@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app-wrapper {
+    background-image: url('../Images/indian-soup.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+

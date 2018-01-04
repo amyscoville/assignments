@@ -1,0 +1,38 @@
+/* @font-face {
+    font-family: "Indie Flower";
+    src: url('https://fonts.googleapis.com/css?family=Indie+Flower');
+   } */
+
+.navbar-wrapper {
+    background-color: rgba(255,255,255, 0.6);;
+    /* opacity: .6; */
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.restaurant-name {
+    font-size: 45px;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    
+}
+
+.navbar-li {
+    margin: 5px;
+}
+
+li > a {
+    color: black;
+    font-family: arial;
+    text-decoration: none;
+    cursor: pointer;
+}

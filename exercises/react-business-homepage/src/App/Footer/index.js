@@ -3,8 +3,10 @@ import './index.css';
 
 function Footer(props) {
     return (
-        <div className='footerContainer'>
-            <p>This is the footer content</p>
+        <div className='footer-container'>
+            <a href="#">CONTACT</a>
+            <a href="#">APPLY</a>
+            <a href="#">OPEN A FRANCHISE</a>
         </div>
     );
 }
