@@ -1,0 +1,10 @@
+.app-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spot-wrapper {
+    margin: 15px;
+    height: 200px;
+    width: 200px;
+}
