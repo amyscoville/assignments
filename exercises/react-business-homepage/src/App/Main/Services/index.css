@@ -4,17 +4,19 @@
     width: 400px;
     margin: 50px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 17px;
     padding: 30px;
     display: inline-block;
 }
 
-
+.buffet {
+    width: 330px;
+}
 
 .services-list {
-    padding: 20px;
+    padding: 15px;
     list-style: none;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .services-li {
