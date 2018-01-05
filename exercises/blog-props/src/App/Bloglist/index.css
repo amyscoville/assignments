@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+
+.bloglist-wrapper {
+    width: 1140px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+
+.older-posts {
+    background-color: #0085a1;
+    border: #0085a1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;    
+    color: white;
+    height: 53px;
+    width: 177.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 750px;
+}
+
+.older-posts:hover {
+    background-color: #017086;
+}

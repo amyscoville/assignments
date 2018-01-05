@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i');
+
+.footer-wrapper {
+    padding-bottom: 25px;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.copyright {
+    text-align: center;
+    color: #868e96;
+    font-family: Lora, 'Times New Roman', serif;
+    font-size: 13px; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.icons {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.twitter, .facebook, .github {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}

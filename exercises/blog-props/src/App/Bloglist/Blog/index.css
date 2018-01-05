@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i');
+.blog-wrapper {
+    font-family: 'Open Sans', sans-serif;    
+    color: #212529;
+    margin-left: 205px;
+    margin-right: 205px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid rgba(0,0,0,.1);;
+}
+
+.title:hover, .subtitle:hover, .start-bootstrap:hover {
+    color: #0085a1;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.7rem;
+    font-weight: 300;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.date {
+    font-family: 'Lora', 'Times New Roman', serif;
+    font-style: italic;
+    color: #868e96;
+    font-size: 20px;
+}
+
+.start-bootstrap {
+    color: #212529;
+}
