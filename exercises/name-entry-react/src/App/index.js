@@ -11,11 +11,12 @@ class App extends Component {
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleKeyPress = this.handleKeyPress.bind(this);
         this.reset = this.reset.bind(this);
     }
 
     handleChange(e) {
-        this.setState({inputName: e.target.value})
+        this.setState({inputName: e.target.value});
     }
 
     handleSubmit(e) {
@@ -29,6 +30,12 @@ class App extends Component {
         this.clearInputs();
     }
 
+    handleKeyPress(e) {
+        if(e.keyCode === 13) {
+            this.handleSubmit(e);
+        }
+    }
+
     clearInputs(){
         this.setState({inputName: ''});
     }
@@ -40,17 +47,17 @@ class App extends Component {
     render() {
         let {names, inputName} = this.state;
         return (
-            <div>
-                <input type="text" onChange={this.handleChange} value={inputName} name='inputName' placeholder='Full Name'/>
+            <form className='app-wrapper'>
+                <input className='name-input' type="text" onChange={this.handleChange} value={inputName} name='inputName' placeholder='Full Name'/>
                 <h1>{inputName}</h1>
-                <button onClick={this.handleSubmit}>SUBMIT</button>
-                <ul>
+                <button className='addName' type='submit' onClick={this.handleSubmit} onKeyPress={this.handleKeyPress}>add name</button>
+                <ol className="nameList">
                     {this.state.names.map((name, index) => {
                         return <ListItem name={name} key={index}></ListItem>
                     })}
-                </ul>
-                <button onClick={this.reset}>RESET</button>
-            </div>
+                </ol>
+                <button onClick={this.reset}>clear list</button>
+            </form>
         )
     }
 }
