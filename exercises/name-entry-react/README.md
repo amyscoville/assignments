@@ -1,34 +1,13 @@
-Use .map and props to create multiple vacation cards with the given the array:
+Source: https://coursework.vschool.io/name-entry/
 
-let vacationSpots = [  
-  {
-    place: "Meridian, Idaho",
-    price: "$40",
-    timeToGo: "Spring"
-  },{
-    place: "Cancun",
-    price: "$900",
-    timeToGo: "Winter"
-  },{
-    place: "China",
-    price: "$1200",
-    timeToGo: "Fall"
-  },{
-    place: "Russia",
-    price: "$1100",
-    timeToGo: "Summer"
-  },{
-    place: "Lebanon",
-    price: "$400",
-    timeToGo: "Spring"
-  }
-]
+Instructions:
 
-Design them well.
+Build a simple react app with an input box, an <h1>, a button, and an ordered list. The user will type names into the input box.
 
-Extra Credit
-Change the background color of your card depending on the timeToGo property.
-Give each card 1, 2, or 3 dollar signs ($) depending on if it's less than $500, less than $1000, or more than $1000
+When the user types in the input box, the <h1> should update to show the same text as the input box.
+
+When the user clicks the button, the value of the input box should be added to a running list of names that have been previous entered. (Hint: you'll need to set state and map over an array to do this).
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
