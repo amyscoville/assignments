@@ -52,7 +52,7 @@ class App extends Component {
                 <h1>{inputName}</h1>
                 <button className='addName' type='submit' onClick={this.handleSubmit} onKeyPress={this.handleKeyPress}>add name</button>
                 <ol className="nameList">
-                    {this.state.names.map((name, index) => {
+                    {names.map((name, index) => {
                         return <ListItem name={name} key={index}></ListItem>
                     })}
                 </ol>

@@ -1,4 +1,8 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    color: navy;
+    color: black;
+}
+
+h1 {
+    text-align: center;
 }

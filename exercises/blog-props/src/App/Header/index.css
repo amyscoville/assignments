@@ -37,3 +37,22 @@
     height: 442px;
     padding-bottom: 35px;
 }
+
+@media(max-width: 762px) {
+    .header-wrapper {
+        height: 382px;
+        background-size: cover;
+    }
+
+    .title-wrapper > h1 {
+        font-size: 60px;
+    }
+
+    .title-wrapper > h3 {
+        font-size: 20px;
+    }
+
+    .title-wrapper {
+        height: 250px;
+    }
+}

@@ -6,7 +6,7 @@ function Friend(props) {
     let pets = props.pets;
     return (
         <div className='friend-wrapper'>
-            <h3>{props.name}</h3>
+            <h2>{props.name}</h2>
             <h4>Age: {props.age}</h4>
             <h4>Pets:</h4>
             {pets.map((pet, index)=>{

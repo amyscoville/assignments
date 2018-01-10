@@ -10,7 +10,9 @@ function Navbar(props) {
                 <li className='navbar-li'><a href="">ABOUT</a></li>
                 <li className='navbar-li'><a href="">SAMPLE POST</a></li>
                 <li className='navbar-li'><a href="">CONTACT</a></li>
+                <li className='menu'>MENU</li>
             </ul>
+
         </div>
     );
 }

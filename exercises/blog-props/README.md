@@ -1,3 +1,23 @@
+Source: https://coursework.vschool.io/blog-props/
+
+Instructions:
+
+A great way to practice building web stuff is to copy sites or apps that are already built.
+
+This exercise will help you to fight through the harder aspects instead of saying "I actually wanted it to look like this," when you might just want to take the easy way out.
+
+Re-create this website: https://blackrockdigital.github.io/startbootstrap-clean-blog/#;
+
+You will organize it into these components:
+
+<Header />  
+    <Navbar />
+<BlogList />  
+    <BlogPost />
+<Footer />  
+You will pass <BlogPost /> it's title, sub title, author, and date through props.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

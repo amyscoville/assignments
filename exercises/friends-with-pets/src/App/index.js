@@ -4,7 +4,11 @@ import './index.css';
 
 function App(props) {
     return (
-        <FriendList></FriendList>
+        <div className='app-wrapper'>
+            <h1>Friends With Pets</h1>
+            <FriendList></FriendList>
+        </div>
+        
     );
 }
 

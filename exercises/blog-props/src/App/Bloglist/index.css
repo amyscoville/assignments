@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
 
 .bloglist-wrapper {
-    width: 1140px;
+    width: 100%;
     margin: auto;
+    padding-left: 10.5%;
+    padding-right: 10.5%;
     padding-top: 50px;
     padding-bottom: 15px;
 }

@@ -3,8 +3,8 @@
     display: flex;
     justify-content: space-between;
     color: white;
-    margin-left: 134px;
-    margin-right: 134px;
+    margin-left: 9%;
+    margin-right: 9%;
     font-weight: 700;
     font-size: 12px;
 }
@@ -12,18 +12,57 @@
 .start {
     font-size: 19px;
     font-weight: 800;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    width: 40%;
-    
+    justify-content: flex-end;
+    width: 80%;
+}
+
+
+.navbar-li {
+    padding: 5px;
+    margin: 2%;
+}
+
+.menu {
+    display: none;
 }
 
 .navbar-li > a {
     text-decoration: none;
     color: white;
-    margin: 20px;
+}
+
+@media(max-width: 1020px) {
+    .navbar-wrapper {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .navbar-ul {
+        width: 50%;
+    }
+}
+
+@media (max-width: 830px) {
+    .start {
+        font-size: 15px;
+    }
+    .navbar-ul {
+        width: 60%;
+        padding-left: 0px;
+    }
+}
+
+@media(max-width: 620px) {
+    .navbar-li {
+        display: none;
+    }
+    .menu {
+        display: inline;
+    }
 }

@@ -1,0 +1,7 @@
+.hitlist-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 800px;
+    text-align: center;
+}
