@@ -1,0 +1,17 @@
+.footer-wrapper {
+    background-color: rgb(0,97,183);
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: fixed;
+    bottom: 0;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
