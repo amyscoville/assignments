@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './About.css';
 
 class About extends Component {
     render() {
         return (
-            <div>
+            <div className='about-wrapper'>
                 About page here!
             </div>
         )
