@@ -1,3 +1,15 @@
+Source: https://coursework.vschool.io/superhero-events/
+
+Instructions:
+Build a React app that displays a list of superheroes with their name and image. When any part of the superhero component (name or image) is clicked, that superhero's catchphrase should show up in an alert box on the screen.
+
+Your app should use:
+
+1. a <SuperHero/> component
+2. A JSON file where all the superhero information is stored
+3. .map to display the correct number of component instances (based on however many superheroes you have in your JSON file
+4. An event handler function that gets passed down to the child <SuperHero/> component
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

@@ -1,0 +1,70 @@
+.form-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2.5% 4.5%;
+    width: 740px;
+    margin: auto;
+}
+
+.input-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "fn ln"
+                         "e bp"
+                         "ph ff";
+    grid-gap: 20px;
+    width: 700px;
+    margin-bottom: 2%;
+}
+
+.inputs {
+    border: 2px solid black;
+    width: 335px;
+}
+
+.fName {
+    grid-area: "fn";
+}
+
+.lName {
+    grid-area: "ln";
+}
+
+.email {
+    grid-area: "e";
+}
+
+.birthplace {
+    grid-area: "bp";
+}
+
+.phone {
+    grid-area: "ph";
+}
+
+.favFood {
+    grid-area: "ff";
+}
+
+.bio {
+    width: 700px;
+    max-width: 700px;
+    min-width: 700px;
+    height: 80px;
+    max-height: 80px;
+    min-height: 80px;
+    margin-bottom: 2%;
+}
+
+.submit {
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: lightgray;
+    width: 80px;
+}

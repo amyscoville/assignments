@@ -1,11 +1,11 @@
 import React from 'react';
-import Badge from './Badge';
+import Badgelist from './Badgelist';
 import './App.css';
 
 function App() {
     return (
         <div className='app-wrapper'>   
-            <Badge></Badge>
+            <Badgelist></Badgelist>
         </div>
     );
 }

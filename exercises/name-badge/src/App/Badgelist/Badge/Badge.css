@@ -1,0 +1,55 @@
+.badge-wrapper {
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 740px;
+    margin: 30px auto;
+    padding-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.badge-banner {
+    /* background-color: gray; */
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    height: 50px;
+    padding-left: 3%;
+}
+
+.info-disp-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "na ph"
+                         "bi fa" 
+                         "em";
+    padding: 5px 41px;
+}
+
+.full-name-disp {
+    grid-area: "na";
+}
+
+.birthplace-disp {
+    grid-area: "bi";
+}
+
+.email-disp {
+    grid-area: "em";
+}
+
+.phone-disp {
+    grid-area: "ph";
+}
+
+.food-disp {
+    grid-area: "fa";
+}
+
+.bio-disp {
+    border: 1px solid black;
+    width: 90%;
+    height: 90px;
+    margin: auto;
+    padding: 5px;
+}
