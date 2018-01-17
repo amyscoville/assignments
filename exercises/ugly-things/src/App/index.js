@@ -1,14 +1,26 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Form from './Form.js';
+import UglyThing from './UglyThing';
+import './App.css';
 
-class App extends Component {
-    render() {
-        return (
-            <div>
-                <Form></Form>
-            </div>
-        )
-    }
+function App(props) {
+    let { uglies } = props;
+    return (
+        <div>
+            <Form></Form>
+           <div className='uglies-wrapper'>
+                {uglies.map((ugly, index) => {
+                    return <UglyThing {...ugly} key={index + ugly.title}/>
+                })}
+           </div>
+        </div>
+    )
 }
 
-export default App;
+
+const mapStateToProps = (state) => {
+    return { uglies: state.uglies };
+}
+
+export default connect(mapStateToProps, {})(App);

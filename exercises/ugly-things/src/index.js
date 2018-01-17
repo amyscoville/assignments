@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import { Provider } from 'react-redux';
+import store from './redux';
 
 import App from './App';
 
 ReactDOM.render(
-    // remember to add state to provider when state is defined
-    <Provider> 
+    <Provider store={store}> 
         <App />
     </Provider>,
     document.getElementById('root')
