@@ -16,9 +16,9 @@ class Superhero extends Component {
     
     render() {
         return (
-            <div className='superhero-wrapper'>
-                <h1 onClick={this.handleClick} className='name'>{this.superhero.name}</h1>
-                <img onClick={this.handleClick} className='image' src={this.superhero.imgUrl} alt={`Photo of ${this.superhero.name}`}/>
+            <div onClick={this.handleClick} className='superhero-wrapper'>
+                <h1 className='name'>{this.superhero.name}</h1>
+                <img className='image' src={this.superhero.imgUrl} alt={`Photo of ${this.superhero.name}`}/>
             </div>
         );
     }

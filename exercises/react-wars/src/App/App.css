@@ -1,0 +1,19 @@
+.app-wrapper {
+    font-family: 'Oswald', sans-serif;
+    background-image: url('http://starwarsblog.starwars.com/wp-content/uploads/2015/10/tfa_poster_wide_header-1536x864-959818851016.jpg');
+    color: white;
+    background-color: black;
+    margin-top: 0;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.main-wrapper {
+    display: flex;
+    font-weight: 400;
+}
