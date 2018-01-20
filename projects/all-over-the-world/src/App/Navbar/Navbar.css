@@ -1,0 +1,17 @@
+.navbar-wrapper {
+    background-color: rgb(255,231,0);
+    height: 45px;
+    font-size: 30px;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto 10px;
+}

@@ -11,7 +11,7 @@ class App extends Component {
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleKeyPress = this.handleKeyPress.bind(this);
+        this.clearInputs = this.clearInputs.bind(this);
         this.reset = this.reset.bind(this);
     }
 
@@ -28,12 +28,6 @@ class App extends Component {
             }
         });
         this.clearInputs();
-    }
-
-    handleKeyPress(e) {
-        if(e.keyCode === 13) {
-            this.handleSubmit(e);
-        }
     }
 
     clearInputs(){

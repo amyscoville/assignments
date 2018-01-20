@@ -1,0 +1,28 @@
+.text-wrapper {
+    background:rgba(255,255,255, 0.5); 
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.to {
+    margin: 0px;
+}
+
+.poem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.poem-lines {
+    text-align: center;
+    line-height: 2px;
+}
