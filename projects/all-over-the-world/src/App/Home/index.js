@@ -1,28 +1,20 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 import globus from './globus.svg';
 import './Home.css';
 
 function Home(props) {
     let style = {
-        backgroundImage: `url(${globus})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        height: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontFamily: 'Arial',
-        color: 'rgb(219,0,16)',
-        fontWeight: 'bold'
+        backgroundImage: `url(${globus})`
     }
     return (
         <div style={style} className='home-wrapper'>
             <div className='text-wrapper'>
-                <div className='title'>
-                    <h1>Welcome</h1> 
-                    <p className='to'>to</p>
-                    <h1>All Over The World</h1>
+                <div className='title-wrapper'>
+                    <h1>Welcome to</h1> 
+                    <h1 className='title'>All Over The World</h1>
+                    <Link className='explore' to='/countries'> Explore! </Link>
                 </div>
                 <div className='poem'>
                     <p className='poem-lines'>"Little one, whoever you are,</p>

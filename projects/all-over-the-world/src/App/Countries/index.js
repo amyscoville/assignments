@@ -19,14 +19,21 @@ class Countries extends Component {
 
     render() {
         let { countries } = this.props;
-        let style = {backgroundImage: `url(${map})`, backgroundPosition: 'center', backgroundSize: '75%'}
+        let style = {backgroundImage: `url(${map})`, backgroundPosition: 'center', backgroundSize: '85%', backgroundAttachment: 'fixed'}
         return (
             <div style={style}>
-                <ul className='countries-wrapper'>
-                    {countries.map((country, index) => {
-                        return <Link to={`/countries/${country.alpha2Code}`} key={index + country.name} className='country-links'>{country.name}</Link>
-                    })}
-                </ul>
+                <div className='layer'>
+                    <h1 className='click-country'>Click on a country to learn more about it!</h1>
+                    <ul className='countries-wrapper'>
+                        {countries.map((country, index) => {
+                            return (
+                                <li className='country-links'>
+                                    <Link to={`/countries/${country.alpha2Code}`} key={index + country.name} className='link-text'>{country.name}</Link>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
             </div>
         )
     }

@@ -1,4 +1,13 @@
+.country-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh
+}
+
 .flag {
     width: 500px;
     border: 1px solid black;
 }
+

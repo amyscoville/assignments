@@ -1,4 +1,5 @@
 import axios from 'axios';
+const mapsApiKey = 'AIzaSyBfWzotxpgiO0FYOpfcbtKLaRjIQd1Kv-w';
 
 const countryUrl = 'https://restcountries.eu/rest/v2/alpha/';
 

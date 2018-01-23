@@ -1,0 +1,22 @@
+.about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'bc p';
+    grid-gap: 10px;
+}
+
+.book-cover {
+    grid-area: 'bc';
+    padding: 5%;
+    margin: auto;
+}
+
+.about-text {
+    grid-area: 'p';
+    padding: 5%;
+}
+
+.book-title {
+    text-decoration: none;
+}

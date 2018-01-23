@@ -25,7 +25,6 @@ function App(props) {
                 <Route path={`/countries/:alpha2Code`} component={Country}/> //props.match.params.name is how I'll access the name from the child component
             </Switch>
             </div>
-            {/* <Footer /> */}
         </div>
     )
 }

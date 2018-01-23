@@ -1,11 +1,15 @@
 .navbar-wrapper {
-    background-color: rgb(255,231,0);
-    height: 45px;
-    font-size: 30px;
+    background-color: rgb(0,194,216);
+    height: 35px;
+    font-size: 20px;
     padding: 5px 20px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+
+.start {
+    color: #ffe700;
 }
 
 .links {
@@ -13,5 +17,9 @@
     color: white;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: auto 10px;
+    margin: auto 15px;
+}
+
+.links:hover {
+    color: rgb(219,0,16);
 }
