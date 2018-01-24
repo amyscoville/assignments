@@ -1,0 +1,21 @@
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    padding: 10px 50px;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.radio-wrapper {
+    display: flex;
+    justify-content: space-around
+}
+
+.title {
+    margin: 0 auto;
+}
