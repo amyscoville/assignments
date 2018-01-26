@@ -19,6 +19,12 @@
     }
 }
 
+@media(max-width: 500px) {
+    .click-country {
+        font-size: 25px;
+    }
+}
+
 .main-countries-wrapper {
     margin-top: 35px;
 }

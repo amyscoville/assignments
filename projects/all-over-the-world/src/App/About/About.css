@@ -7,6 +7,12 @@
     margin-top: 35px;
 }
 
+.book-cover-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .book-cover {
     grid-area: 'bc';
@@ -28,6 +34,10 @@
     grid-area: 'p';
     padding: 20% 7%;
     font-size: 25px;
+}
+
+.about-p {
+    text-align: center;
 }
 
 @media(max-width: 1030px) {
@@ -68,7 +78,7 @@
     .book-cover {
         width: 500px;
         height: auto;
-        margin: auto;
+        margin: 0;
     }
 
     .book-poem {
@@ -77,5 +87,12 @@
 
     .about-text {
         padding: 5%;
+    }
+}
+
+@media(max-width: 500px) {
+    .book-cover {
+        width: 350px;
+        height: auto;
     }
 }

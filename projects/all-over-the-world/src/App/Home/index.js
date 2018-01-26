@@ -12,7 +12,7 @@ function Home(props) {
         <div style={style} className='home-wrapper'>
             <div className='text-wrapper'>
                 <div className='title-wrapper'>
-                    <h1>Welcome to</h1> 
+                    <h1 className='welcome'>Welcome to</h1> 
                     <h1 className='title'>All Over The World</h1>
                     <Link className='explore' to='/countries'> Explore! </Link>
                 </div>
