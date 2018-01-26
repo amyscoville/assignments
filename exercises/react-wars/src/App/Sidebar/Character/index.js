@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import './Character.css';
+import './Character.css';eg
 
 const swUrl = 'https://swapi.co/api/people/';
 

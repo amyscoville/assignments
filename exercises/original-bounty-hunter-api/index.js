@@ -1,13 +1,20 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+// const bountyRoute = require('./routes/bounty.js');
 const uuid = require('uuid');
+const config = require('./config');
+const cors = require('cors');
 
 let bounties = require('./bounties.js');
 
 const app = express();
-let port = 5050;
 
+//middleware
 app.use(bodyParser.json());
+app.use(cors());
+
+//routes
+// app.use('/bounty', bountyRoute);
 
 app.get('/bounty', (req, res) => {
     res.send(bounties);
@@ -92,6 +99,6 @@ app.put('/bounty/:id', (req, res) => {
 });
 
 
-app.listen(port, () => {
-    console.log('Listening on port ' + port);
+app.listen(config.port, () => {
+    console.log('Listening on port ' + config.port);
 });

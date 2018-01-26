@@ -20,6 +20,7 @@ export function getCountry(code) {
                     type: 'GET_COUNTRY',
                     country: response.data
                 });
+                console.log(response.data);
             })
             .catch(err => {
                 console.error(err);

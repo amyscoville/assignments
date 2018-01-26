@@ -1,6 +1,5 @@
 .layer {
     background-color: rgba( 255, 255, 255, 0.7 );
-    /* color: */
 }
 
 .click-country {
@@ -12,6 +11,16 @@
     color: #1f5520;
     font-weight: 700;
     font-size: 50px;
+}
+
+@media(max-width: 1015px) {
+    .click-country {
+        font-size: 35px;
+    }
+}
+
+.main-countries-wrapper {
+    margin-top: 35px;
 }
 
 .countries-wrapper {

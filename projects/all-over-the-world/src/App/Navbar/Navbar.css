@@ -6,6 +6,16 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+@media(max-width: 370px) {
+    .navbar-wrapper {
+        font-size: 15px;
+    }
 }
 
 .start {

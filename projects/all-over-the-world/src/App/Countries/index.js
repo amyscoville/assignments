@@ -21,7 +21,7 @@ class Countries extends Component {
         let { countries } = this.props;
         let style = {backgroundImage: `url(${map})`, backgroundPosition: 'center', backgroundSize: '85%', backgroundAttachment: 'fixed'}
         return (
-            <div style={style}>
+            <div style={style} className='main-countries-wrapper'>
                 <div className='layer'>
                     <h1 className='click-country'>Click on a country to learn more about it!</h1>
                     <ul className='countries-wrapper'>
