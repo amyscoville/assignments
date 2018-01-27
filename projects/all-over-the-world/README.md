@@ -1,18 +1,17 @@
-All Over The World is a place where children can learn about other countries. It uses axios to make requests to the REST Countries API (https://restcountries.eu/) and displays a list of country names as well as an individual page for each country with more detailed information and a picture of a flag.
+# All Over The World - React/Redux with API Integration
 
-Source: https://coursework.vschool.io/personal-react-redux-site/
+Amy Scoville
 
-Instructions:
+## Objective
 
-You are going to design and build your very own React/Redux site with a theme and content of your choosing.
+1) Build an educational website with a child-friendly interface. Help children become familiar with countries around the world.
 
-This site will be a portfolio piece.
+2) Meet the following assignment requirements:
+  * Integrate with an online API
+  * Have 3 page views using React Router
+  * Be responsive
 
-Requirements:
-
-1) Your site must integrate with an online API.
-2) Your site must have at least 3 views (pages) using React Router.
-3) Your site must be responsive. Can use any method to accomplish this you want.
+![alt text](public/images/home.png)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
