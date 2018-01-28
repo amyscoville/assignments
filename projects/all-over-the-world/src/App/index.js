@@ -20,7 +20,7 @@ function App(props) {
                     <Route exact path='/' component={Home}/>
                     <Route exact path='/countries' component={Countries}/>
                     <Route path='/about' component={About}/>
-                    <Route path={`/countries/:alpha2Code`} component={Country}/> //props.match.params.name is how I'll access the name from the child component
+                    <Route path={`/countries/:alpha2Code`} component={Country}/> 
                 </Switch>
             </div>
         </div>

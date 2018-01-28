@@ -32,7 +32,8 @@ var addToCart = function(item) {
         shoppingCart.totalPrice += shoppingCart[item.id].price;
         shoppingCart.totalQty++;
     } 
-    storeCart();   
+    storeCart(); 
+    alert(`${item.name} has been added to your cart!`);  
 }
 
 function storeCart() {
