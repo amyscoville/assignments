@@ -22,10 +22,10 @@ Amy Scoville
 * AJAX
 
 ## Wireframes
-![alt text](public/images/homepage-wireframe.jpg)
-![alt text](public/images/countries-wireframe.jpg)
-![alt text](public/images/country-wireframe.jpg)
-![alt text](public/images/about-wireframe.png)
+![alt text](public/images/homepage-wireframe.jpg){:height="250px" width="400px"}
+![alt text](public/images/countries-wireframe.jpg){:height="250px" width="400px"}
+![alt text](public/images/country-wireframe.jpg){:height="250px" width="400px"}
+![alt text](public/images/about-wireframe.png){:height="250px" width="400px"}
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
