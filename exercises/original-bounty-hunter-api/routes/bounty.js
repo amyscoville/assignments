@@ -84,3 +84,5 @@ bountyRoute.route('/bounty/:id')
             });
         }
     });
+
+    module.exports = bountyRoute;
