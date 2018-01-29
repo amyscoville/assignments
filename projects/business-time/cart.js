@@ -7,25 +7,25 @@ document.onload = displayCart();
 function displayCart() {
     if(localStorage.getItem('cart')) {
         let table = document.getElementById('myTable');
-    for (let key in cart) {
-        if (key === 'totalPrice' || key === 'totalQty') {
-            continue;
+        for (let key in cart) {
+            if (key === 'totalPrice' || key === 'totalQty') {
+                continue;
+            }
+            let row = document.createElement('tr');
+            let item = document.createElement('td');
+            item.innerHTML = cart[key].name;
+            let price = document.createElement('td');
+            price.innerHTML = cart[key].dispPrice;
+            let qty = document.createElement('td');
+            qty.innerHTML = cart[key].qty;
+            let total = document.createElement('td');
+            total.innerHTML = cart[key].total;
+            row.appendChild(item);
+            row.appendChild(price); 
+            row.appendChild(qty); 
+            row.appendChild(total);
+            table.appendChild(row);
         }
-        let row = document.createElement('tr');
-        let item = document.createElement('td');
-        item.innerHTML = cart[key].name;
-        let price = document.createElement('td');
-        price.innerHTML = cart[key].dispPrice;
-        let qty = document.createElement('td');
-        qty.innerHTML = cart[key].qty;
-        let total = document.createElement('td');
-        total.innerHTML = cart[key].total;
-        row.appendChild(item);
-        row.appendChild(price); 
-        row.appendChild(qty); 
-        row.appendChild(total);
-        table.appendChild(row);
-    }
     setFinalRow();
     }
 }
@@ -56,8 +56,9 @@ let emptyCartButton = document.getElementById('empty-cart');
 emptyCartButton.onclick = function() {
     localStorage.clear();
     cart = {};
-    displayCart();
+    // displayCart();
     alert('Your cart is empty');
+    location.reload();
 }
 
     
