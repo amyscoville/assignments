@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import BountyDisplay from './BountyDisplay';
+
 const bountyUrl = 'http://localhost:5050/bounty';
+
 
 export default class Form extends Component {
     constructor(props) {
@@ -12,10 +15,13 @@ export default class Form extends Component {
                 living: false,
                 bountyAmt: '',
                 type: ''
-            }
+            },
+            bounties: [],
+            loading: true
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.getBounties = this.getBounties.bind(this);
     }
 
     handleChange(e) {
@@ -47,11 +53,23 @@ export default class Form extends Component {
             })
             .catch(err => {
                 console.error(err);
-            })
+            });
         this.clearInputs();
     }
 
-    clearInputs(){
+    getBounties(){
+        axios.get(bountyUrl) 
+            .then(response => {
+                this.setState({
+                    bounties: response.data
+                })
+            })
+            .catch(err => {
+                console.error(err);
+            });
+    }
+
+    clearInputs() {
         this.setState({
             inputs: {
                 firstName: '',
@@ -65,24 +83,28 @@ export default class Form extends Component {
 
     render() {
         let { firstName, lastName, bountyAmt } = this.state.inputs;
+        let { bounties } = this.state;
         return (
-            <form onSubmit={this.handleSubmit} className='form-wrapper'>
-                <h1 className='title'>Original Bounty Hunters</h1>
-                <input onChange={this.handleChange} name='firstName' value={firstName} type='text' placeholder='First Name' />
-                <input onChange={this.handleChange} name='lastName' value={lastName} type="text" placeholder="Last Name" />
-                <label className='radio-wrapper'>
-                    Living?
-                    <input onChange={this.handleChange} type="radio" name="living" value='true' />   True
-                    <input onChange={this.handleChange} type="radio" name="living" value='false' />   False
-                </label>
-                <input onChange={this.handleChange} name="bountyAmt" value={bountyAmt} type="number" placeholder="Bounty Amount" />
-                <label className='radio-wrapper'>
-                    Type:
-                    <input onChange={this.handleChange} type="radio" name="type" value="Jedi" /> Jedi
-                    <input onChange={this.handleChange} type="radio" name="type" value="Sith" /> Sith
-                </label>
-                <input type="submit" value="SUBMIT" />
-            </form>
+            <div>
+                <form onSubmit={this.handleSubmit} className='form-wrapper'>
+                    <h1 className='title'>Original Bounty Hunters</h1>
+                    <input onChange={this.handleChange} name='firstName' value={firstName} type='text' placeholder='First Name' />
+                    <input onChange={this.handleChange} name='lastName' value={lastName} type="text" placeholder="Last Name" />
+                    <label className='radio-wrapper'>
+                        Living?
+                        <input onChange={this.handleChange} type="radio" name="living" value='true' />   True
+                        <input onChange={this.handleChange} type="radio" name="living" value='false' />   False
+                    </label>
+                    <input onChange={this.handleChange} name="bountyAmt" value={bountyAmt} type="number" placeholder="Bounty Amount" />
+                    <label className='radio-wrapper'>
+                        Type:
+                        <input onChange={this.handleChange} type="radio" name="type" value="Jedi" /> Jedi
+                        <input onChange={this.handleChange} type="radio" name="type" value="Sith" /> Sith
+                    </label>
+                    <input type="submit" value="SUBMIT" />
+                </form>
+                <BountyDisplay bounties = {bounties}/>
+            </div>
         )
     }
 }

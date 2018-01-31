@@ -1,1 +1,1 @@
-This is a collection of all of my V School exercises and projects.
+This is the main README file for all of my assignments from V School. Each of the directories in this directory represents an exercise (completed immediately after learning a new topic) or a project (used to test my ability in given areas of development) that I've worked on during my time here. Each of these assignments has a README file that explains the assignment given.

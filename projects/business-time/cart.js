@@ -51,12 +51,9 @@ function setFinalRow() {
 
 let emptyCartButton = document.getElementById('empty-cart');
 
-//WHY ISN'T THIS EMPTY CART WORKING?
-
 emptyCartButton.onclick = function() {
     localStorage.clear();
     cart = {};
-    // displayCart();
     alert('Your cart is empty');
     location.reload();
 }

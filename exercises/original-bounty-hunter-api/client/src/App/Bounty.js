@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Bounty(props) {
+    console.log('bounty-props', props)
     let {firstName, lastName, living, bountyAmt, type} = props;
     return (
         <div>

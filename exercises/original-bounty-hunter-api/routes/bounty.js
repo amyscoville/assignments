@@ -1,9 +1,10 @@
 const express = require('express');
 const bountyRoute = express.Router();
+const uuid = require('uuid');
 
 let bounties = require('../bounties.js');
 
-bountyRoute.route('/bounty')
+bountyRoute.route('/')
     .get((req, res) => {
         res.send(bounties);
     })
@@ -18,7 +19,7 @@ bountyRoute.route('/bounty')
         });
     });
 
-bountyRoute.route('/bounty/:id')
+bountyRoute.route('/:id')
     .get((req, res) => {
         let { id } = req.params;
         let found = false;
