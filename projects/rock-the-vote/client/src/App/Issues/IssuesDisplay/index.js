@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getIssues, addIssue } from '../../../redux/issues';
 import Issue from './Issue';
+import './IssuesDisplay.css';
 
 class IssuesDisplay extends Component {
     componentDidMount() {
@@ -12,7 +13,7 @@ class IssuesDisplay extends Component {
         let { data, loading } = this.props.issues;
         return (
             !loading ?
-                <div>
+                <div className="issue-display-wrapper">
                     {data.sort((issue1, issue2) => {
                         issue1 = issue1.upvotes;
                         issue2 = issue2.upvotes;

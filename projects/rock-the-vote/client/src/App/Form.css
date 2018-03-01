@@ -1,0 +1,41 @@
+.form-wrapper {
+    height: 350px;
+    width: 500px;            
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px auto;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+
+.title {
+    height: 30px;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.form-description {
+    height: 150px;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    resize: none;
+}
+
+@media(max-width: 525px) {
+    .formStyle {
+        height: 300px;
+        width: 90%;
+    }
+
+    .titleStyle {
+        width: 80%;
+    }
+
+    .descriptionStyle {
+        width: 80%;
+    }
+}

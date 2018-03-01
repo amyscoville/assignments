@@ -5,7 +5,6 @@ const Issues = require('../models/issues');
 
 issuesRoute.route('/')
     .get((req, res) => {
-        // let query = {};
         Issues.find(req.query, (err, issues) => {
             if (err) return res.status(500).send(err);
             return res.send(issues);

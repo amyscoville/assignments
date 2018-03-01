@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './Form.css';
 
 export default class Form extends Component {
     constructor(props) {
@@ -49,30 +50,11 @@ export default class Form extends Component {
 
     render() {
         let { title, description } = this.state.inputs;
-        let formStyle = {
-            height: "350px",
-            width: "500px",            
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "space-around",
-            margin: "20px auto",
-            backgroundColor: "lightgray"
-        }
-        let titleStyle = {
-            height: "30px",
-            width: "400px",
-        }
-        let descriptionStyle = {
-            height: "150px",
-            width: "400px",
-
-        }
         return (
-            <form onSubmit={this.handleSubmit} style={formStyle}>
-                <p>Have and issue you'd like to discuss? Post it here:</p>
-                <input style={titleStyle} type="text" onChange={this.handleChange} placeholder="Title" name="title" value={title} />
-                <textarea style={descriptionStyle} type="text" onChange={this.handleChange} placeholder="Description" name="description" value={description} />
+            <form onSubmit={this.handleSubmit} className="form-wrapper">
+                <p>Get the conversation going:</p>
+                <input className="title" type="text" onChange={this.handleChange} placeholder="Title" name="title" value={title} />
+                <textarea className="form-description" type="text" onChange={this.handleChange} placeholder="Description" name="description" value={description} />
                 <button className='submit' type='submit'>POST</button>
             </form>
         )

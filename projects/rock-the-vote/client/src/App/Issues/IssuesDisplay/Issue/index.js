@@ -44,8 +44,8 @@ class Issue extends Component {
                     <div className="voting">
                         <span className="total">Total Votes: {issue.totalVotes || 0}</span>
                         <div>
-                            <a className="thumb" onClick={() => {this.vote('up', issue)}}><img src={thumbsUp} alt="upvote" /><span>{issue.upvotes || 0}</span></a>
-                            <a className="thumb" onClick={() => {this.vote('down', issue)}}><img src={thumbsDown} alt="downvote" /><span>{issue.downvotes || 0}</span></a>
+                            <a className="thumb" onClick={() => {this.vote('up', issue)}}><img src={thumbsUp} alt="upvote" /><span> {issue.upvotes || 0}</span></a>
+                            <a className="thumb" onClick={() => {this.vote('down', issue)}}><img src={thumbsDown} alt="downvote" /><span> {issue.downvotes || 0}</span></a>
                         </div>
                     </div>
                     
